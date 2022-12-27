@@ -1,17 +1,9 @@
 #include "sokoban.h"
 #include <string>
 
-void count(int re[]);
-
-
 void edit(SDL_Surface *screen)
 {
 	//declaration
-	SDL_Surface *block;
-	SDL_Surface *peanut;
-	SDL_Surface *goal;
-	SDL_Surface *player1;
-	SDL_Surface *dog, *dogOK, *grass;
 	SDL_Surface *manual;
 
 	SDL_Rect p;
@@ -30,17 +22,6 @@ void edit(SDL_Surface *screen)
 	obj_now = WALL;
 	i = 0;
 	j = 0;
-
-	// 載入地圖物件
-	block = IMG_Load("src/sprites/stone.png");
-	peanut = IMG_Load("src/sprites/peanut.png");
-	goal = IMG_Load("src/sprites/shopping_bag.png");
-	player1 = IMG_Load("src/sprites/anya_down.png");
-
-	// 洞 & 背景
-	dog = IMG_Load("src/sprites/bond_defense.png");
-	dogOK = IMG_Load("src/sprites/bond_rest.png"); 
-	grass = IMG_Load("src/sprites/tile.png");
 
 	// manual
 	manual = IMG_Load("src/screen/edit_instructions.png");

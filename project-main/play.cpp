@@ -5,13 +5,8 @@ void play(SDL_Surface *screen)
 {
 	//declaration
 	SDL_Surface *player1[4];
-	SDL_Surface *block;
-	SDL_Surface *peanut;
-	SDL_Surface *peanutOK;
 	SDL_Surface *playerCurrent;
-	SDL_Surface *goal;
 	SDL_Surface *manual, *end, *fail_end;
-	SDL_Surface *dog, *dogOK, *grass;
 
 	SDL_Rect p;
 	SDL_Rect p_J;
@@ -39,16 +34,16 @@ void play(SDL_Surface *screen)
 	p_fail.x = 0;
 	p_fail.y = 0;
 	
-	//地圖物件
-	block = IMG_Load("src/sprites/stone.png");
-	peanut = IMG_Load("src/sprites/peanut.png");
-	peanutOK = IMG_Load("src/sprites/full_shopping_bag.png");
-	goal = IMG_Load("src/sprites/shopping_bag.png");
+	// //地圖物件
+	// block = IMG_Load("src/sprites/stone.png");
+	// peanut = IMG_Load("src/sprites/peanut.png");
+	// peanutOK = IMG_Load("src/sprites/full_shopping_bag.png");
+	// goal = IMG_Load("src/sprites/shopping_bag.png");
 
-	// 洞 & 背景
-	dog = IMG_Load("src/sprites/bond_defense.png");
-	dogOK = IMG_Load("src/sprites/bond_rest.png");
-	grass = IMG_Load("src/sprites/tile.png");
+	// // 洞 & 背景
+	// dog = IMG_Load("src/sprites/bond_defense.png");
+	// dogOK = IMG_Load("src/sprites/bond_rest.png");
+	// grass = IMG_Load("src/sprites/tile.png");
 
 	// player 1 四個面向
 	player1[UP] = IMG_Load("src/sprites/anya_up.png");

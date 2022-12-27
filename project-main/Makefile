@@ -1,6 +1,6 @@
 EXE = Sokoban
 
-SRCS = play.cpp file_loader.cpp main.cpp file_loader_2P.cpp play_2P.cpp show.cpp 
+SRCS = play.cpp file_loader.cpp main.cpp file_loader_2P.cpp play_2P.cpp show.cpp sokoban.cpp
 
 HEAD = sokoban.h
 

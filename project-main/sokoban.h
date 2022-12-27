@@ -12,6 +12,14 @@ const int N_HEIGHT = 15;
 const int WIDTH = PEANUT_SIZE * N_WIDTH;
 const int HEIGHT = PEANUT_SIZE * N_HEIGHT;
 
+// all pictures
+extern SDL_Surface *block;
+extern SDL_Surface *peanut;
+extern SDL_Surface *peanutOK, *peanutOK1, *peanutOK2;
+extern SDL_Surface *goal, *goal1, *goal2;
+extern SDL_Surface *dog, *dogOK, *grass;
+extern SDL_Surface *player1, *player2;
+
 // background
 #define GRASS 0
 #define DOG_OK 1
