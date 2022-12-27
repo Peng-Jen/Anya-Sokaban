@@ -1,4 +1,4 @@
-EXE = Sokoban
+EXE = AnyaSokoban
 
 SRCS = play.cpp file_loader.cpp main.cpp file_loader_2P.cpp play_2P.cpp show.cpp sokoban.cpp
 
@@ -10,7 +10,7 @@ all: $(EXE)
 
 $(EXE): $(HEAD)
 	@g++ $(SRCS) -lSDL -lSDL_image -o $(EXE)
-	@echo "./Anya's Sokoban is created!"
+	@echo "./Anya's Sokoban is created!!"
 
 clean:
 	@/bin/rm -f $(OUTO)

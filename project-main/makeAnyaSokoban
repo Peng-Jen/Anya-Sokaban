@@ -1,1 +1,1 @@
-rm Sokoban && make && ./Sokoban
+rm Anya\'s\ Sokoban && make && ./Anya\'s\ Sokoban
