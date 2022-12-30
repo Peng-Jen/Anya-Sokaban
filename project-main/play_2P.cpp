@@ -6,8 +6,13 @@ void play_2P(SDL_Surface *screen)
 {
     // declaration
     SDL_Surface *player1[4], *player2[4];
-    SDL_Surface *manual, *end_anya, *end_damian;
+    SDL_Surface *block;
+    SDL_Surface *peanut;
+    SDL_Surface *peanutOK1, *peanutOK2;
     SDL_Surface *player1Current, *player2Current;
+    SDL_Surface *goal1, *goal2;
+    SDL_Surface *manual, *end_anya, *end_damian;
+    SDL_Surface *dog, *dogOK, *grass;
 
     SDL_Rect p, p1, p2;
     SDL_Rect p1_J, p2_J;
@@ -35,6 +40,18 @@ void play_2P(SDL_Surface *screen)
     p_end_damian.x = 0;
     p_end_damian.y = 0;
 
+    // 地圖物件
+    block = IMG_Load("src/sprites/stone.png");
+    peanut = IMG_Load("src/sprites/peanut.png");
+    goal1 = IMG_Load("src/sprites/shopping_bag.png");
+    goal2 = IMG_Load("src/sprites/shopping_bag_damian.png");
+    peanutOK1 = IMG_Load("src/sprites/full_shopping_bag.png");
+    peanutOK2 = IMG_Load("src/sprites/full_shopping_bag_damian.png");
+
+    // 洞 & 背景
+    dog = IMG_Load("src/sprites/bond_defense.png");
+    dogOK = IMG_Load("src/sprites/bond_rest.png");
+    grass = IMG_Load("src/sprites/tile.png");
 
     // player 1 四個面向
     player1[UP] = IMG_Load("src/sprites/anya_up.png");

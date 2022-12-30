@@ -4,7 +4,13 @@
 void edit_2P(SDL_Surface *screen)
 {
     //declaration
+    SDL_Surface *block;
+    SDL_Surface *peanut;
+    SDL_Surface *goal1, *goal2;
+    SDL_Surface *player1, *player2;
+    SDL_Surface *grass, *dog, *dogOK;
     SDL_Surface *manual;
+
     SDL_Rect p_manual;
     SDL_Rect p, p1, p2;
     SDL_Event event;
@@ -22,6 +28,19 @@ void edit_2P(SDL_Surface *screen)
     obj_now = WALL;
     i = 0;
     j = 0;
+
+    // 載入地圖物件
+    block = IMG_Load("src/sprites/stone.png");
+    peanut = IMG_Load("src/sprites/peanut.png");
+    goal1 = IMG_Load("src/sprites/shopping_bag.png");
+    goal2 = IMG_Load("src/sprites/shopping_bag_damian.png");
+    player1 = IMG_Load("src/sprites/anya_down.png");
+    player2 = IMG_Load("src/sprites/damian_down.png");
+
+    // 洞 & 背景
+    dog = IMG_Load("src/sprites/bond_defense.png");
+    dogOK = IMG_Load("src/sprites/bond_rest.png"); 
+    grass = IMG_Load("src/sprites/tile.png");
 
     // 載入說明圖片
     manual = IMG_Load("src/screen/edit_instructions_2p.png");
