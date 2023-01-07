@@ -1,4 +1,4 @@
-# PD-Final
+# Anya's Sokoban
 This is a classic "Sokoban" with the theme **SPY × FAMILY** 
 
 To execute this project, you have to
